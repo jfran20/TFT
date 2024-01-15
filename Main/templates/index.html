@@ -1,0 +1,131 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+    <title>TFT</title>
+</head>
+
+
+<body>
+    <nav style="min-height: 8vh;">
+        <b class="txt-head" style="float: left;width: 25%;">H&F</b>
+
+        <ul style="float: left;text-align: center;">
+            <li class="li-hor"><a href="#"><b>Workouts</b></a></li>
+            <li class="li-hor"><a href="#"><b>Nutrition</b></a></li>
+            <li class="li-hor"><a href="#"><b>Recepies</b></a></li>
+            <li class="li-hor"><a href="#"><b>Health</b></a></li>
+        </ul>
+
+        <div style="float: right;height: 7vh;display: flex;">
+            <button class="bttn-txt" style="color: #001F3F; margin: 0 3vw;">Sign In</button>
+            <button class="button-32" style="width: 8vw; margin: auto;">Sign Up</button>
+        </div>
+    </nav>     
+    
+    <!-- Main banner -->
+    <div class="banner" style="background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z3ltJTIwZml0bmVzc3xlbnwwfHwwfHx8MA%3D%3D'); background-size:cover; background-repeat:no-repeat; background-position: center center;">
+        <div style="margin: auto;">
+            <p class="txt-head">Build for building you</p>
+            <p><i>Unlock your potential</i></p>
+            <button class="button-32" role="button">Join Now</button>
+        </div>
+    </div>
+
+    <!-- Info cards -->
+    <div class="row">
+        <div class="column">
+            <div class="topic-card">
+                <div class="card-header" style="height: 25%;">
+                    <p class="txt-head">GYM</p>
+                    <i>Get acces to the best routines or create your own!</i>
+                </div>
+                <div style="height: 75%; width: 100%;">
+                    <img src="{% static 'images/NoImage.jpg' %}" width="100%" alt="" style="height: 100%;   object-fit: cover;">
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="topic-card">
+                <img src="{% static 'images/NoImage.jpg' %}" width="100%" height="200px" alt="">
+                
+                <div class="card-contet" style="padding: 3%;">
+                    <div style="display: flex;max-height: 45px;">
+                        <p style="float:left; font-size: 30px;font-weight: bold;margin: 0;width: 50%;text-align: left;">Nutrition</p>
+                        <div class="tags" style="float: right; display: flex;width: 50%;">
+                            <p class="tag" style="background-color: deeppink;">#GYM</p>
+                            <p class="tag" style="background-color: greenyellow;">#FIT</p>
+                            <p class="tag">#HEALTH</p>
+                        </div>
+                    </div>
+                    <p style="clear: both; text-align: left;margin: 0;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam reprehenderit, incidunt quis eligendi laudantium sequi ducimus hic laborum eius.</p>
+                    <a style="float: right;clear: both;" href="#">Leer más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner" style="background-color: #001F3F;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est assumenda mollitia commodi vero quis at, temporibus voluptatibus doloribus, eligendi possimus aspernatur fuga reiciendis nemo laboriosam rerum, nihil ratione placeat ducimus.
+    </div>
+    
+    <!-- Info cards -->
+    <div class="row">
+        <div class="column">
+            <div class="topic-card">
+                <p class="txt-head">Recipes</p>
+                <p>Never feel lost again on your meals</p>
+                <img src="{% static 'images/NoImage.jpg' %}" width="100%" height="200px" alt="">
+            </div>
+        </div>
+        <div class="column">
+            <div class="topic-card">
+                <p class="txt-head">Health</p>
+                <p>Hydratation reminder, sleep tracker, habit tracker and much more!</p>
+                <img src="{% static 'images/NoImage.jpg' %}" width="100%" height="200px" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="row footer">
+        <div class="column">
+            <b>Features</b>
+            <ul>
+                <li>Workouts</li>
+                <li>Nutiotion</li>
+                <li>Recipes</li>
+                <li>Sleep</li>
+                <li>Hydratation</li>
+                <li>Breathing</li>
+            </ul>
+        </div>
+        <div class="column">
+            <b>Social</b>
+            <ul>
+                <li>Facebook</li>
+                <li>Instagram</li>
+            </ul>
+        </div>
+        <div class="column">
+            <b>About</b>
+            <ul>
+                <li>Team</li>
+                <li>Privacy</li>
+                <li>Terms</li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="row" style="text-align: center;">
+        JFEM @2024
+    </div>
+</body>
+</html>
+
+
